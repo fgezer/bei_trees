@@ -1,7 +1,7 @@
 library(spatstat)
 
-load(url('https://github.com/fgezer/ens_models/raw/main/bei_data.RData'))
-source(url('https://github.com/fgezer/ens_models/raw/main/lift_sim.R'))
+load(url('https://github.com/fgezer/bei_trees/raw/main/bei_data.RData'))
+source(url('https://github.com/fgezer/bei_trees/raw/main/lift_sim.R'))
 
 L1 = lift2D(x = bei$x[1:100], y = bei$y[1:100], f = elev[1:100], nleft = 20, stage = NULL, 
             keepnbrs = F, Lmat = T, rw = c(0,1000,0,500), method = 'convex')
